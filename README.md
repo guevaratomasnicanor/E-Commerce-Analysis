@@ -1,4 +1,40 @@
 # E-Commerce-Analysis
+
+
+  category_english      total_orders total_revenue
+  <chr>                        <int>         <dbl>
+1 bed_bath_table               10953      1225209.
+2 health_beauty                 9465      1412090.
+3 sports_leisure                8430      1118063.
+4 furniture_decor               8160       880330.
+5 computers_accessories         7643      1032604.
+
+category_english      total_orders total_revenue
+  <chr>                        <int>         <dbl>
+1 health_beauty                 9465      1412090.
+2 watches_gifts                 5857      1264017.
+3 bed_bath_table               10953      1225209.
+4 sports_leisure                8430      1118063.
+5 computers_accessories         7643      1032604.
+
+
+💎 TOP 5 CATEGORÍAS POR TICKET PROMEDIO (MAYOR VALOR POR VENTA):
+> print(top_5_premium %>% select(category_english, avg_ticket, total_orders))
+# A tibble: 5 × 3
+  category_english                      avg_ticket total_orders
+  <chr>                                      <dbl>        <int>
+1 computers                                  1147.          199
+2 small_appliances_home_oven_and_coffee       675.           73
+3 home_appliances_2                           512.          231
+4 agro_industry_and_commerce                  370.          206
+5 musical_instruments                         311.          651
+
+
+El "Efecto Lunes": Es tu día estrella con 15,701 órdenes. Hay una psicología de "comienzo de semana" donde los usuarios ejecutan las compras que pensaron el domingo.
+
+La Paradoja del Sábado: Es el día con menos órdenes (10,555), pero es el que tiene el Ticket Promedio más alto ($144).
+
+Insight: El sábado la gente compra menos, pero cuando compra, elige productos más caros o hace pedidos más grandes.
 Tus datos revelan que el cliente de Olist es "tolerante" hasta el tercer día de retraso. A partir del cuarto día, la experiencia de usuario entra en zona de desastre:
 
 Zona Segura (≤ 3 días tarde): La satisfacción (4-5⭐) se mantiene en un aceptable 65%.
