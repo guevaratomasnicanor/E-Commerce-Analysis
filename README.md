@@ -1,150 +1,190 @@
-# E-Commerce-Analysis
+# 🛒 Análisis de E-Commerce — Olist Marketplace (Brasil)
+
+## 📌 Descripción del Proyecto
+Este proyecto presenta un **análisis integral de Olist**, uno de los marketplaces de e-commerce más grandes de Brasil.  
+El objetivo principal es **entender los drivers de ingresos, el comportamiento de los clientes, el desempeño logístico y los factores de churn**, transformando datos transaccionales en **insights accionables de negocio**.
+
+Más allá de métricas descriptivas, el análisis busca responder una pregunta estratégica central:
+
+> **¿Por qué un marketplace con alta satisfacción del cliente presenta niveles de churn tan elevados?**
+
+---
+
+## 🎯 Objetivos de Negocio
+- Identificar **categorías líderes** por volumen, revenue y ticket promedio  
+- Analizar el **comportamiento de compra por día de la semana**  
+- Medir el impacto de los **retrasos en la entrega sobre la satisfacción**  
+- Detectar **sellers de alto riesgo** más allá de la logística  
+- Segmentar clientes mediante **análisis RFM**  
+- Evaluar **churn, LTV y sostenibilidad del modelo**  
+- Analizar el **costo del flete como barrera estructural**  
+- Identificar **oportunidades de expansión geográfica**
+
+---
+
+## 📊 Fuentes de Datos
+- Órdenes y productos  
+- Clientes y sellers  
+- Pagos  
+- Reviews  
+- Geolocalización y costos de flete  
+
+Dataset público: **Olist Brazilian E-Commerce Dataset**.
+
+---
+
+## 🔑 Insights Clave 
+
+### 1️⃣ Concentración de Revenue por Categoría
+Las categorías con mayor volumen de órdenes y revenue son:
+- **Health & Beauty**
+- **Bed, Bath & Table**
+- **Sports & Leisure**
+- **Computers & Accessories**
+
+📌 **Insight:**  
+El revenue se explica por dos estrategias distintas:
+- Categorías de **alta frecuencia**  
+- Categorías de **alto valor por ticket**
+
+---
+
+### 2️⃣ Categorías Premium: Valor sin Escala
+Top 5 categorías por **Ticket Promedio**:
+- Computers (R$ 1.147)
+- Electrodomésticos
+- Agroindustria
+- Instrumentos musicales
+
+📌 **Implicancia:**  
+Son categorías que **aportan margen**, pero no volumen. Su rentabilidad depende fuertemente de la eficiencia logística.
+
+---
+
+### 3️⃣ El “Efecto Lunes” y la “Paradoja del Sábado”
+- **Lunes:** mayor cantidad de órdenes (15.701)  
+- **Sábado:** menos órdenes (10.555), pero **ticket promedio más alto (R$ 144)**
+
+🧠 **Insight de comportamiento:**  
+El fin de semana se toman decisiones más racionales y de mayor valor; entre semana predominan compras rutinarias.
+
+---
+
+### 4️⃣ Retrasos y Experiencia del Cliente: el Punto de Quiebre
+Existe un umbral claro de tolerancia al retraso:
+
+| Retraso | Comportamiento |
+|------|---------------|
+| ≤ 3 días | 65% de reviews positivas |
+| 4–7 días | Las reviews negativas se triplican |
+| > 15 días | 78.9% de reviews negativas |
+
+📌 **Conclusión:**  
+A partir del **día 4**, la experiencia entra en zona crítica y el riesgo de churn se dispara.
+
+---
+
+### 5️⃣ Sellers de Alto Riesgo: No es un Problema Logístico
+Los sellers con mayor porcentaje de reviews negativas:
+- Entregan **antes de lo prometido**
+- Aun así tienen **50–60% de reviews negativas**
+
+🎯 **Insight Pro:**  
+El problema es **calidad del producto o expectativas**, no logística. La velocidad no compensa una mala experiencia.
+
+---
+
+### 6️⃣ RFM: Un Modelo Altamente Transaccional
+- **85.6%** de los clientes están en *“Need Attention”*
+- Frecuencia promedio: **1 compra**
+- Solo **3 clientes Loyal**
+
+📌 **Riesgo estructural:**  
+El negocio depende casi exclusivamente de **captar nuevos clientes**, no de retenerlos.
+
+---
+
+### 7️⃣ Churn como Problema Sistémico
+- **Churn global:** 59.8%  
+- Segmento *At Risk*: **13.843 clientes**
+- El LTV casi no crece entre clientes activos y churned
+
+💰 **Costo de oportunidad:**  
+Reactivar solo el **10%** de este segmento implicaría **+R$ 225.000 en ventas sin CAC**.
+
+---
+
+### 8️⃣ El Flete como Barrera de Crecimiento
+**Freight-to-Price Ratio promedio: 0.32**
+
+- Norte y Nordeste: **55–60%**
+- São Paulo: **0.26**
+- Mediana: **0.23**
+
+🚧 **Insight:**  
+El flete no es un costo adicional, es una **barrera a la recompra**, especialmente en regiones alejadas.
+
+---
+
+### 9️⃣ São Paulo: El Pulmón del Sistema
+- Genera **R$ 5.7M**, más que todas las demás regiones combinadas  
+- Menor costo promedio de flete (R$ 15.1)
+
+📌 **Conclusión:**  
+Olist es un negocio de **proximidad logística**, no un mercado homogéneo a nivel nacional.
+
+---
+
+### 🔟 Regiones con Mejor Potencial de Expansión
+**Centro-Oeste y Sur (DF, PR):**
+- Ticket promedio saludable (R$ 126–138)
+- Flete estable (~0.34)
+
+🎯 **Estrategia recomendada:**  
+Zonas ideales para **membresías tipo Prime** o **flete fijo**.
+
+---
+
+## 📈 KPIs Principales
+
+| KPI | Valor | Interpretación |
+|---|---|---|
+| SLA Compliance | 92.09% | Alta estabilidad operativa |
+| Ticket Promedio | R$ 159.83 | Ancla económica |
+| NPS | 62.06 | Alta satisfacción |
+| Churn | 59.8% | Retención deficiente |
+| Freight-to-Price | 0.32 | Fricción estructural |
+
+---
+
+## 🧠 Conclusión Final de Negocio
+Olist es **muy eficiente captando clientes y cumpliendo entregas**, pero **ineficiente reteniéndolos**.
+
+Los clientes están satisfechos, el sistema funciona, pero:
+
+> **El costo de volver a comprar (flete) supera el valor percibido de la recompra.**
+
+Esto convierte al marketplace en un modelo **transaccional, frágil y dependiente del CAC**.
+
+---
+
+## 🚀 Recomendaciones Estratégicas
+- Incentivos de flete para la **segunda compra**
+- Estrategias logísticas regionalizadas
+- Control de calidad para sellers de alto riesgo
+- Redefinir “lealtad” (2 compras = cliente elite)
+- Priorizar retención antes de escalar adquisición
+
+---
+
+## 🛠️ Herramientas Utilizadas
+- R / tidyverse  
+- SQL  
+- Visualización con ggplot2  
+- Segmentación RFM  
+- Modelado de KPIs de negocio  
+
+---
 
 
-  category_english      total_orders total_revenue
-  <chr>                        <int>         <dbl>
-1 bed_bath_table               10953      1225209.
-2 health_beauty                 9465      1412090.
-3 sports_leisure                8430      1118063.
-4 furniture_decor               8160       880330.
-5 computers_accessories         7643      1032604.
 
-category_english      total_orders total_revenue
-  <chr>                        <int>         <dbl>
-1 health_beauty                 9465      1412090.
-2 watches_gifts                 5857      1264017.
-3 bed_bath_table               10953      1225209.
-4 sports_leisure                8430      1118063.
-5 computers_accessories         7643      1032604.
-
-
-💎 TOP 5 CATEGORÍAS POR TICKET PROMEDIO (MAYOR VALOR POR VENTA):
-> print(top_5_premium %>% select(category_english, avg_ticket, total_orders))
-# A tibble: 5 × 3
-  category_english                      avg_ticket total_orders
-  <chr>                                      <dbl>        <int>
-1 computers                                  1147.          199
-2 small_appliances_home_oven_and_coffee       675.           73
-3 home_appliances_2                           512.          231
-4 agro_industry_and_commerce                  370.          206
-5 musical_instruments                         311.          651
-
-
-El "Efecto Lunes": Es tu día estrella con 15,701 órdenes. Hay una psicología de "comienzo de semana" donde los usuarios ejecutan las compras que pensaron el domingo.
-
-La Paradoja del Sábado: Es el día con menos órdenes (10,555), pero es el que tiene el Ticket Promedio más alto ($144).
-
-Insight: El sábado la gente compra menos, pero cuando compra, elige productos más caros o hace pedidos más grandes.
-Tus datos revelan que el cliente de Olist es "tolerante" hasta el tercer día de retraso. A partir del cuarto día, la experiencia de usuario entra en zona de desastre:
-
-Zona Segura (≤ 3 días tarde): La satisfacción (4-5⭐) se mantiene en un aceptable 65%.
-
-Zona de Riesgo (4-7 días tarde): El porcentaje de reviews negativas (≤ 2⭐) se triplica al 62.2%.
-
-Zona Crítica (> 15 días tarde): El 78.9% de los clientes califica negativamente. Aquí el riesgo de churn es casi total.
-
-Es muy interesante notar que el top 10 de vendedores con mayor riesgo tienen un avg_delay negativo (llegan antes de tiempo), pero un pct_negative_reviews altísimo (cerca del 50-60%).
-
-Insight Pro: Esto sugiere que el problema de estos vendedores no es la logística, sino la calidad del producto o la expectativa. Están entregando rápido, pero lo que entregan decepciona profundamente al cliente.
-
-2. Sellers de "Alto Riesgo"
-Es muy interesante notar que el top 10 de vendedores con mayor riesgo tienen un avg_delay negativo (llegan antes de tiempo), pero un pct_negative_reviews altísimo (cerca del 50-60%).
-
-Insight Pro: Esto sugiere que el problema de estos vendedores no es la logística, sino la calidad del producto o la expectativa. Están entregando rápido, pero lo que entregan decepciona profundamente al cliente.
-
-
-El 85.6% de tus clientes están en el segmento "Need Attention" con una frecuencia promedio de 1.
-
-Esto significa que la gran mayoría de los usuarios entra, compra una vez y no vuelve.
-
-Riesgo: Si el costo de adquirir un cliente (CAC) es alto, el negocio es frágil porque no hay recompra orgánica que amortice ese gasto.
-
-2. Los "Loyal Customers" son una anomalía
-Solo encontraste 3 clientes en el segmento Loyal.
-
-Esto sugiere que los cortes de tus quintiles (breaks = 5) podrían estar demasiado apretados porque casi no hay variación en la frecuencia. En Olist, alguien que compra 2 veces ya es un cliente de élite.
-
-3. El Segmento "At Risk" (14.4%)
-Tienes 13,843 clientes que compraron hace mucho tiempo (recencia promedio de 502 días) y nunca volvieron. este grupo representa capital muerto: usuarios que ya conocen la plataforma pero que el servicio o el precio no logró retener.
-
-
-La tasa de churn global del 59.8% confirma que el modelo actual es puramente transaccional. En términos de riesgo, esto significa que el flujo de caja futuro es altamente incierto porque depende casi exclusivamente de captar clientes nuevos constantemente.
-
-🔍 Hallazgos Críticos por Segmento
-1. La fragilidad del "Loyal Customer"
-Dato: Aunque tienen un LTV impresionante ($6,760 vs $159 del promedio), solo son 3 personas y una ya entró en churn (33.3%).
-
-Insight de Riesgo: No se puede construir un modelo de estabilidad basado en anomalías. El verdadero riesgo es que el 85% del revenue depende del segmento "Need Attention", que tiene un churn del 53%.
-
-2. El Segmento "At Risk" como Costo de Oportunidad
-Tienes 13,843 clientes con un 100% de churn. Estos usuarios ya gastaron dinero una vez ($163 en promedio), pero Olist no logró retenerlos.
-
-Impacto Financiero: Si se lograra reactivar solo al 10% de este grupo, recuperarías más de $225,000 en ventas sin costo de adquisición inicial.
-
-3. El Valor de Vida (LTV) Estancado
-La diferencia entre el LTV de un cliente en riesgo ($163) y uno activo ($159) es mínima. Esto sugiere que los clientes no crecen dentro de la plataforma; se quedan en su ticket inicial y luego se van.
-
-
-
-1. La Barrera del 50%: El flete como inhibidor de compra
-El indicador Freight-to-Price Ratio muestra una desigualdad geográfica masiva en Brasil.
-
-El Muro del Norte: En estados como Rondônia (RO), Roraima (RR) y Maranhão (MA), el costo del flete representa entre el 55% y 60% del valor del producto.
-
-Efecto en el Ticket: Para que el flete sea "pagable" en estas regiones, el ticket promedio tiende a ser más alto ($167 en RO vs. $109 en SP).
-
-Insight de Datos: Olist es un negocio de proximidad. En el Norte y Noreste, el flete no es un "añadido", es una barrera que probablemente está causando un abandono de carrito masivo que no vemos en estos datos de órdenes completadas.
-
-2. São Paulo: El pulmón del sistema
-La dominancia de SP no es solo por población, es por eficiencia logística.
-
-Con un ratio de flete de 0.26 (el más bajo), SP genera $5.7 millones en ingresos, más que todas las demás regiones combinadas.
-
-Dato Clave: SP tiene el flete promedio más bajo ($15.1), lo que permite la venta de productos de bajo ticket que en otros estados serían inviables.
-
-3. El "Sweet Spot" del Centro-Oeste y Sur
-Estados como Distrito Federal (DF) y Paraná (PR) presentan el mejor equilibrio para la expansión:
-
-Tienen tickets promedio saludables ($126 - $138).
-
-Mantienen ratios de flete competitivos (~0.34).
-
-Estrategia: Estas regiones son los mejores candidatos para programas de "Flete Fijo" o membresías tipo Prime, ya que el costo logístico es predecible y no erosiona el margen del cliente.
-
-
-🗺️ Hotspots y Categorías Regionales
-Especialización del Norte/Noreste: Las categorías de Health & Beauty y Watches/Gifts dominan los ingresos en las regiones alejadas. Al ser productos de poco peso y alto valor, son los únicos que logran absorber el costo del flete sin espantar al comprador.
-
-Concentración Urbana: Solo São Paulo y Río de Janeiro concentran casi el 45% del revenue total de los hotspots. Fuera de las capitales, el e-commerce en Brasil todavía tiene un techo logístico muy marcado.
-
-
-SLA Compliance (92.09%): Es una métrica de estabilidad alta. Nueve de cada diez pedidos cumplen con la promesa de entrega. Sin embargo, en un volumen de 110k órdenes, ese ~8% de fallas representa a miles de usuarios que entran directamente en la "zona de riesgo" de insatisfacción que vimos antes.
-
-Average Order Value (R$ 159.83): Este es tu ancla económica. Cualquier costo operativo (como el flete o el marketing) debe medirse contra estos 160 reales para entender si la transacción es rentable.
-
-NPS (62.06 puntos): Un puntaje de 62 es sólido. Indica que la mayoría de los usuarios son "Promotores". Esto confirma que el problema de Olist no es el producto o el servicio base, sino la falta de incentivos para la recurrencia (como vimos en el Churn del 60%).
-
-Freight-to-Price Ratio (0.32): La diferencia entre el promedio (0.32) y la mediana (0.23) es un indicador de distorsión. El flete promedio es más alto porque las entregas a zonas remotas tienen costos tan extremos que "mueven" la media, a pesar de que la mayoría de las órdenes tienen un costo de envío más bajo.
-
-
-📉 Análisis de Rendimiento (KPIs)
-SLA Compliance (92.09%): Es una métrica de estabilidad alta. Nueve de cada diez pedidos cumplen con la promesa de entrega. Sin embargo, en un volumen de 110k órdenes, ese ~8% de fallas representa a miles de usuarios que entran directamente en la "zona de riesgo" de insatisfacción que vimos antes.
-
-Average Order Value (R$ 159.83): Este es tu ancla económica. Cualquier costo operativo (como el flete o el marketing) debe medirse contra estos 160 reales para entender si la transacción es rentable.
-
-NPS (62.06 puntos): Un puntaje de 62 es sólido. Indica que la mayoría de los usuarios son "Promotores". Esto confirma que el problema de Olist no es el producto o el servicio base, sino la falta de incentivos para la recurrencia (como vimos en el Churn del 60%).
-
-Freight-to-Price Ratio (0.32): La diferencia entre el promedio (0.32) y la mediana (0.23) es un indicador de distorsión. El flete promedio es más alto porque las entregas a zonas remotas tienen costos tan extremos que "mueven" la media, a pesar de que la mayoría de las órdenes tienen un costo de envío más bajo.
-
-💡 Insight de Datos Consolidado
-Si conectamos los puntos:
-
-Tienes un AOV de R$ 160.
-
-Un flete que consume el 32% de ese valor en promedio.
-
-Un NPS alto (la gente está contenta).
-
-Pero un Churn masivo.
-
-Conclusión técnica: El sistema es excelente captando y cumpliendo, pero es ineficiente reteniendo. El alto costo del flete en relación al ticket promedio actúa como un impuesto a la recurrencia. El cliente queda satisfecho con su compra, pero el costo de "volver a pedir" (flete) comparado con el valor del producto parece no compensar.
