@@ -95,9 +95,10 @@ El problema es **calidad del producto o expectativas**, no logística. La veloci
 ---
 
 Segmentación por clientes: 
-El 65.9% de los clientes son "Prometedores". Esto significa que compraron hace poco ($146$ días promedio), pero solo una vez.
+El 65.9% de los clientes son "Prometedores". Estos clientes están a una mala experiencia (o un flete caro) de desaparecer. No tienen historial de lealtad; son "prometedores" solo porque compraron hace poco, pero su LTV ($164) es casi idéntico al de los clientes que ya diste por perdidos ("Lost", $165).
 
 Categorías de "Repuesto" (Home Appliances y Drinks): Con un 19% y 15.6% de recompra, vemos que el cliente vuelve cuando el producto es de consumo o necesidad funcional inmediata.El fenómeno "Fashion": Las categorías de bolsos y accesorios están en el Top 3. Esto sugiere que hay un componente emocional o de catálogo que invita a explorar más de una vez.El fracaso de la tecnología: Computadoras y electrónica tienen las tasas más bajas ($2.27\%$). Nadie compra una PC dos veces en un año. Aquí el flete duele más porque el producto es caro y la expectativa de logística es altísima.
+
 
 ### 8️⃣ El Flete como Barrera de Crecimiento
 **Freight-to-Price Ratio promedio: 0.32**
