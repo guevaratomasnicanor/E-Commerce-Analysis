@@ -94,25 +94,10 @@ El problema es **calidad del producto o expectativas**, no logística. La veloci
 
 ---
 
-### 6️⃣ RFM: Un Modelo Altamente Transaccional
-- **85.6%** de los clientes están en *“Need Attention”*
-- Frecuencia promedio: **1 compra**
-- Solo **3 clientes Loyal**
+Segmentación por clientes: 
+El 65.9% de los clientes son "Prometedores". Esto significa que compraron hace poco ($146$ días promedio), pero solo una vez.
 
-📌 **Riesgo estructural:**  
-El negocio depende casi exclusivamente de **captar nuevos clientes**, no de retenerlos.
-
----
-
-### 7️⃣ Churn como Problema Sistémico
-- **Churn global:** 59.8%  
-- Segmento *At Risk*: **13.843 clientes**
-- El LTV casi no crece entre clientes activos y churned
-
-💰 **Costo de oportunidad:**  
-Reactivar solo el **10%** de este segmento implicaría **+R$ 225.000 en ventas sin CAC**.
-
----
+Categorías de "Repuesto" (Home Appliances y Drinks): Con un 19% y 15.6% de recompra, vemos que el cliente vuelve cuando el producto es de consumo o necesidad funcional inmediata.El fenómeno "Fashion": Las categorías de bolsos y accesorios están en el Top 3. Esto sugiere que hay un componente emocional o de catálogo que invita a explorar más de una vez.El fracaso de la tecnología: Computadoras y electrónica tienen las tasas más bajas ($2.27\%$). Nadie compra una PC dos veces en un año. Aquí el flete duele más porque el producto es caro y la expectativa de logística es altísima.
 
 ### 8️⃣ El Flete como Barrera de Crecimiento
 **Freight-to-Price Ratio promedio: 0.32**
