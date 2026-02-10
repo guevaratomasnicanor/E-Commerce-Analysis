@@ -109,8 +109,8 @@ Categorías de "Repuesto" (Home Appliances y Drinks): Con un 19% y 15.6% de reco
 **Freight-to-Price Ratio promedio: 0.32**
 
 - Norte y Nordeste: **55–60%**
-- São Paulo: **0.26**
-- Mediana: **0.23**
+- São Paulo: **26%**
+- Mediana: **23%**
 
 🚧 **Insight:**  
 El flete no es un costo adicional, es una **barrera a la recompra**, especialmente en regiones alejadas.
