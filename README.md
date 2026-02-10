@@ -117,7 +117,7 @@ Solo ~15% de los clientes perdidos tuvieron flete Bajo (<10%)
 El flete funciona como un impuesto al consumo.
 Los clientes con flete bajo no desaparecen, migran a segmentos de mayor lealtad.
 
-Recompras: Solo el 3% de los clientes vuelve a comprar.
+Recompras: Solo el 3% de los clientes vuelve a comprar.Benchmark general de recompra en e-commerce ~28% en promedio: alrededor de 1 de cada 4 clientes vuelve a comprar en un periodo típico (6–12 meses).
 
 ### 8️⃣ El Flete como Barrera de Crecimiento
 **Freight-to-Price Ratio promedio: 0.32**
