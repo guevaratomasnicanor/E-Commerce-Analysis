@@ -117,6 +117,8 @@ Solo ~15% de los clientes perdidos tuvieron flete Bajo (<10%)
 El flete funciona como un impuesto al consumo.
 Los clientes con flete bajo no desaparecen, migran a segmentos de mayor lealtad.
 
+Recompras: Solo el 3% de los clientes vuelve a comprar.
+
 ### 8️⃣ El Flete como Barrera de Crecimiento
 **Freight-to-Price Ratio promedio: 0.32**
 
