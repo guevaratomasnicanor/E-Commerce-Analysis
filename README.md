@@ -94,16 +94,28 @@ El problema es **calidad del producto o expectativas**, no logística. La veloci
 
 ---
 
-Segmentación por clientes: 
-El 65.9% de los clientes son "Prometedores". Estos clientes están a una mala experiencia (o un flete caro) de desaparecer. No tienen historial de lealtad; son "prometedores" solo porque compraron hace poco, pero su LTV ($164) es casi idéntico al de los clientes que ya diste por perdidos ("Lost", $165).
-En el segmento "Lost" (clientes que no han vuelto en más de un año), el 56.9% de las órdenes tuvieron un flete Alto o Muy Alto (más del 20% del valor del producto).
-Casi 6 de cada 10 clientes que perdiste pagaron un "impuesto" logístico carísimo. Es muy probable que su experiencia de compra haya terminado con un sentimiento de "me salió más caro el collar que el perro", anulando cualquier posibilidad de recompra.
-Tanto en Lost como en Others, el porcentaje de clientes con Flete Bajo (<10%) es el más pequeño (aprox. 15.4% - 15.6%).
- Esto sugiere que los clientes con fletes bajos son los que NO están en estas listas de "perdidos" en la misma proporción. O dicho de otra forma: si el flete es bajo, el cliente tiene muchas más probabilidades de migrar hacia un segmento de mayor lealtad en lugar de quedarse estancado en "Others" o morir en "Lost".
+6️⃣ Segmentación de Clientes (RFM): Lealtad Frágil
 
+La segmentación RFM revela una estructura de clientes extremadamente inestable:
 
-Categorías de "Repuesto" (Home Appliances y Drinks): Con un 19% y 15.6% de recompra, vemos que el cliente vuelve cuando el producto es de consumo o necesidad funcional inmediata.El fenómeno "Fashion": Las categorías de bolsos y accesorios están en el Top 3. Esto sugiere que hay un componente emocional o de catálogo que invita a explorar más de una vez.El fracaso de la tecnología: Computadoras y electrónica tienen las tasas más bajas ($2.27\%$). Nadie compra una PC dos veces en un año. Aquí el flete duele más porque el producto es caro y la expectativa de logística es altísima.
+65.9% de los clientes pertenecen al segmento “Prometedores”
 
+Su LTV promedio (R$ 164) es prácticamente idéntico al de los clientes “Lost” (R$ 165)
+
+📌 Insight:
+Estos clientes no son leales; simplemente compraron recientemente. Están a una mala experiencia o un flete caro de desaparecer del sistema.
+
+7️⃣ Churn y Flete: El Verdadero Impuesto a la Recompra
+
+El análisis del segmento “Lost” revela un patrón estructural:
+
+56.9% de las órdenes tuvieron flete Alto o Muy Alto (>20% del valor del producto)
+
+Solo ~15% de los clientes perdidos tuvieron flete Bajo (<10%)
+
+📌 Conclusión:
+El flete funciona como un impuesto al consumo.
+Los clientes con flete bajo no desaparecen, migran a segmentos de mayor lealtad.
 
 ### 8️⃣ El Flete como Barrera de Crecimiento
 **Freight-to-Price Ratio promedio: 0.32**
